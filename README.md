@@ -12,7 +12,6 @@ The objective of this taks is to ensure that candidate has a good understanding 
 6. The `blog-service` also have the metrics endpoint, ensure that the prometheus can get those application metrics
 7. The application log must be delivered to `AWS Cloudwatch`
 8. The application required the mongoDB as its datasource, ensure that the mongoDB is also deployed inside the kubernetes
-10. TBD
 
 
 The image below shows the overall requirements for this task, as mention in the items above, the solution will need the mongodb running as a service in Kubernetes cluster, preferably in its own namespace e.g. db.
