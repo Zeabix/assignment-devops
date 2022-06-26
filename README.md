@@ -15,4 +15,18 @@ The objective of this taks is to ensure that candidate has a good understanding 
 10. TBD
 
 
+The image below shows the overall requirements for this task, as mention in the items above, the solution will need the mongodb running as a service in Kubernetes cluster, preferably in its own namespace e.g. db.
+
+![Diagram 1](/asset/Task-Page-1.png)
+
+
+This following diagram shows more details for solution, the application provided `blog-service` has `/metrics` endpoint which is expected to be scraped by prometheus. Also the `blog-service` will need the mongodb as persistent layer.
+
+Please also create ingress for of `blog-service` and `grafana` (the self-signed certificate would be ok)
+
+Also the log messages should be transported and stored in `CloudWatch` 
+
+![Diagram 2](asset/Task-Page-2.png)
+
+
 NOTE: All infrastructure resouces that provisioned during this assignment should be done as an IaC (infrastructure as a code) and store in the repository mentioned above
